@@ -35,8 +35,7 @@ def ocr_cropped_volume(volume, dir='cropped'):
         EnvironmentError: If the Tesseract binary is not found.
     """
     # Automatically find the Tesseract binary
-    #I had to hard code it I am not sure how it is automatically finding the tesseract binary 
-    tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+    tesseract_cmd = shutil.which('tesseract')
     if tesseract_cmd:
         pytesseract.pytesseract.tesseract_cmd = tesseract_cmd
     else:
