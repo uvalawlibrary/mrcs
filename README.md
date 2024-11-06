@@ -14,7 +14,6 @@ Install Anaconda Python: Install Anaconda from [Anaconda website](https://www.an
 
 ```
 conda --version
-
 ```
 Install Python Packages: This project requires several Python libraries to be installed. You can install all of the dependencies as shown below.
 
